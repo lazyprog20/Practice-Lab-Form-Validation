@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formvalid.css">
+    <script src="formvalid.js"></script>
+    <title>Create a New Event</title>
+</head>
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form" onsubmit="practicef()">
+                <div class="form-row m-b-10">
+                    <div class="col">
+                        <span class="label-input100 fs-25">
+                            Event Type:
+                        </span>                        
+                    </div>
+                    <div class="col">
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Choose One</option>
+                            <option value="Event Type One">Event Type One</option>
+                            <option value="Event Type Two">Event Type Two</option>
+                            <option value="Event Type Three">Event Type Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row m-b-10">
+                    <div class="col">
+                        <span class="label-input100 fs-25">
+                            Event Title:
+                        </span>  
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control w-full" onkeyup="titleLimit(this)" required>
+                    </div>
+                </div>
+                <div class="form-row m-b-10">
+                    <div class="col">
+                        <span class="label-input100 fs-25">
+                            Event Dates:
+                        </span>  
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <input type="date" id="startDate" class="form-control w-full" onchange="dateCheck1(this)" required>
+                            </div>
+                            <div>
+                                <span class="label-input100 fs-20">to</span>
+                            </div>
+                            <div class="col">
+                                <input type="date" id="endDate" class="form-control w-full" onchange="dateCheck2(this)" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row m-b-10">
+                    <div class="col">
+                        <span class="label-input100 fs-25">
+                            Posting Date:
+                        </span>  
+                    </div>
+                    <div class="col">
+                        <input type="date" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row m-t-25">
+                    <div class="col">
+                        <input type="checkbox" value="Yes" name="q1" id="quest1">
+                        <label class="label-input100 fs-20" for="quest1">Is Registration Required?</label>
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="checkbox" value="Yes" name="q2" id="quest2">
+                        <label class="label-input100 fs-20" for="quest2">Is this event associated with any Family Programs?</label>
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="checkbox" value="Yes" name="q3" id="quest3">
+                        <label class="label-input100 fs-20" for="quest3">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label>
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="checkbox" value="Yes" name="q4" id="quest4">
+                        <label class="label-input100 fs-20" for="quest4">Is There a Point of Contract?</label>
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="checkbox" value="Yes" name="q5" id="quest5">
+                        <label class="label-input100 fs-20" for="quest5">Is There a Hosting Command Point of Contract?</label>
+                    </div>  
+                </div>
+                <div class="form-row m-t-30">
+                    <div class="col">
+                        <button class="btn btn-info my-4 btn-block" type="submit">Save</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary my-4 btn-block" type="reset">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

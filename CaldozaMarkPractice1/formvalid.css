@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('font/Poppins-Regular.ttf'); 
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+    font-family: Poppins-Regular;
+    line-height:1.5;
+}
+
+button {
+	outline: none !important;
+    border: none;
+    background: transparent;
+    font-family:inherit;
+    font-size:inherit;
+}
+
+button:focus{
+    outline:1px dotted;
+    outline:5px auto -webkit-focus-ring-color
+}
+
+select {
+    cursor: pointer;
+    margin:0;
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit
+}
+
+label{
+    display:inline-block;
+    margin-bottom:.5rem;
+}
+
+.container-contact100 {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url('image/event.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-contact100 {
+    width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 42px 55px 45px 55px;
+}
+
+.contact100-form {
+    width: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.form-row{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-5px;
+    margin-left:-5px
+}
+
+.form-row>.col,.form-row>[class*=col-]{
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.form-control{
+    display:block;
+    height:calc(1.5em + .75rem + 2px);
+    padding:.375rem .75rem;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#495057;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    border-radius:.25rem;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.form-control:focus{
+    color:#495057;
+    background-color:#fff;
+    border-color:#80bdff;
+    outline:0;
+    box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+
+.col{
+    -ms-flex-preferred-size:0;
+    flex-basis:0;
+    -ms-flex-positive:1;
+    flex-grow:1;
+    max-width:100%;
+    position:relative;
+    width:100%;
+    padding-right:15px;
+    padding-left:15px
+}
+
+.row{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px
+}
+
+.label-input100 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+.btn{
+    display:inline-block;
+    font-weight:400;
+    color:#212529;
+    text-align:center;
+    vertical-align:middle;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-color:transparent;
+    border:1px solid transparent;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    line-height:1.5;
+    border-radius:.25rem;
+    transition:color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out
+}
+
+.btn:hover{
+    color:#212529;
+    text-decoration:none
+}
+
+.btn.focus,.btn:focus{
+    outline:0;
+    box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+
+.btn-info{
+    color:#fff;
+    background-color:#17a2b8;
+    border-color:#17a2b8
+}
+
+.btn-info:hover{
+    color:#fff;
+    background-color:#138496;
+    border-color:#117a8b
+}
+
+.btn-info.focus,.btn-info:focus{
+    box-shadow:0 0 0 .2rem rgba(58,176,195,.5)
+}
+
+.btn-secondary{
+    color:#fff;
+    background-color:#6c757d;
+    border-color:#6c757d
+}
+
+.btn-secondary:hover{
+    color:#fff;
+    background-color:#5a6268;
+    border-color:#545b62
+}
+
+.btn-secondary.focus,.btn-secondary:focus{
+    box-shadow:0 0 0 .2rem rgba(130,138,145,.5)
+}
+
+.btn-block{
+    display:block;
+    width:100%;
+    margin-top:.5rem;
+}
+
+.my-4{
+    margin-bottom:1.5rem !important;
+    margin-top:1.5rem!important
+}
+
+.m-t-25 {
+    margin-top: 25px;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
